@@ -72,7 +72,7 @@ pipeline {
     // Notification par mail en cas d'erreur
     post {
         failure {
-            mail to: 'admin@example.com',
+            mail to: 'souhaila.el-moujibi@esi.ac.ma',
                  subject: "❌ Build échoué : ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Le build a échoué. Voir les détails : ${env.BUILD_URL}"
         }
